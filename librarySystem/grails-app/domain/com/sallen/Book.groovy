@@ -9,7 +9,10 @@ class Book {
 		Date dateBorrowed
 		Date returnDate
 		string student
-		boolean overdue?
+		boolean overdue
+		Library library
+
+		static hasMany=[students:Student,bookReviews:BookReview]
 
     static constraints = {
 		

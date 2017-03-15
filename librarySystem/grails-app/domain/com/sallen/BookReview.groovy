@@ -6,6 +6,7 @@ class BookReview {
 		Date dateCreated
 		String student
 		String review
+		static hasMany=[students:Student,books:Book]
 
     static constraints = {
 
