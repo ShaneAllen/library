@@ -10,7 +10,7 @@ class Student {
 		Course course
 		Library library
 
-		Static hasMany[bookReviews:BookReview, books:Books]
+		static hasMany=[bookReviews:BookReview, books:Book]
 
     static constraints = {
 		

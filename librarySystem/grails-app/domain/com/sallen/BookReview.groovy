@@ -7,6 +7,7 @@ class BookReview {
 		String student
 		String review
 		static hasMany=[students:Student,books:Book]
+		static belongsTo=[Book,Student]
 
     static constraints = {
 

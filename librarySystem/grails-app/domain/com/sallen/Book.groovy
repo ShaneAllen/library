@@ -8,22 +8,23 @@ class Book {
 		String isbn
 		Date dateBorrowed
 		Date returnDate
-		string student
-		boolean overdue
+		String student
+		Boolean overdue
 		Library library
 
 		static hasMany=[students:Student,bookReviews:BookReview]
+		static belongsTo=[Student]
 
     static constraints = {
 		
 		title blank:false, nullable:false
 		subject blank:false, nullable:false
 		author blank:false, nullable:false
-		isbn blank:false, nullable:false min:4, max:10
+		isbn blank:false, nullable:false, minSize:4, maxSize:10
 		dateBorrowed blank:false, nullable:false
 		returnDate blank:false, nullable:false
 		student blank:false, nullable:false
-		overdue? blank:false, nullable:false
+		overdue blank:false, nullable:false
 		
     }
 }

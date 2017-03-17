@@ -4,13 +4,13 @@ class Library {
 	
 		String building
 		String address
-		Int openingHours
+		int openingHours
 		String location
 		String studySpaces
 		Librarian librarian
 		Book book
 
-		static hasMany[students:Student]
+		static hasMany=[students:Student]
 
     static constraints = {
 		
