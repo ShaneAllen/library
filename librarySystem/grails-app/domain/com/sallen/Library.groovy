@@ -4,13 +4,11 @@ class Library {
 	
 		String building
 		String address
-		int openingHours
+		String openingHours
 		String location
-		String studySpaces
-		Librarian librarian
-		Book book
+		int studySpaces
 
-		static hasMany=[students:Student]
+		static hasMany=[students:Student,books:Book,librarian:Librarian]
 
     static constraints = {
 		
@@ -18,8 +16,7 @@ class Library {
 		address blank:false, nullable:false, widget:'textarea' 
 		openingHours blank:false, nullable:false 
 		location blank:false, nullable:false
-		studySpaces blank:false, nullable:false
-		librarian blank:false, nullable:false
-		book blank:false, nullable:false
+		studySpaces blank:false, nullable:false, max:100
+
     }
 }
