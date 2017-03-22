@@ -11,6 +11,10 @@ class Student {
 		Library library
 
 		static hasMany=[bookReviews:BookReview, books:Book]
+	
+		String toString(){
+		"$name, $studentID"
+		}
 
     static constraints = {
 		

@@ -2,12 +2,11 @@ package com.sallen
 
 class BookReview {
 
-		String book
+		Book book
 		Date datePublished
-		String student
+		Student student
 		String review
-		static hasMany=[students:Student,books:Book]
-		static belongsTo=[Book,Student]
+
 
     static constraints = {
 
