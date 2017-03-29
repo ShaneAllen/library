@@ -7,6 +7,10 @@ class BookReview {
 		Student student
 		String review
 
+		String toString(){
+		return book
+		}
+
 
     static constraints = {
 

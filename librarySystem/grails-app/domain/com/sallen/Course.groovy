@@ -17,6 +17,10 @@ class Course {
 		double calculateCost(){
 		2*cost
 		}
+		
+		String toString(){
+		return title
+		}
 
 
     static constraints = {
