@@ -26,4 +26,5 @@ class Student {
 		course blank:false, nullable:false
 		library blank:false, nullable:false
     }
+	
 }
